@@ -1,0 +1,15 @@
+{
+  "name": "magicmirror",
+  "description": "An Angular app for a magic mirror interface.  It will display weather, calendar items, etc... for people in my house",
+  "main": "index.js",
+  "authors": [
+    "Matthew"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
