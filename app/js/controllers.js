@@ -2,9 +2,9 @@ angular.module('magicmirror.controllers', [])
 
     .controller('WeatherCtrl', ['$log', 'WeatherFactory', function ($log, WeatherFactory){
         var vm = this;
-        WeatherFactory.getWeather().then(function (data){
-            vm.value = data;
-        });
+        //WeatherFactory.getWeather().then(function (data){
+        //    vm.value = data;
+        //});
 
     }])
 

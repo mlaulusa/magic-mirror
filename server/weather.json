@@ -1,0 +1,3361 @@
+{
+  "response": {
+    "version": "0.1",
+    "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+    "features": {
+      "conditions": 1,
+      "forecast": 1,
+      "hourly": 1,
+      "alerts": 1
+    }
+  },
+  "current_observation": {
+    "image": {
+      "url": "http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "display_location": {
+      "full": "Provo, UT",
+      "city": "Provo",
+      "state": "UT",
+      "state_name": "Utah",
+      "country": "US",
+      "country_iso3166": "US",
+      "zip": "84601",
+      "magic": "1",
+      "wmo": "99999",
+      "latitude": "40.22052002",
+      "longitude": "-111.69313812",
+      "elevation": "1372.00000000"
+    },
+    "observation_location": {
+      "full": "Grandview near Westridge Elementary School, Provo, Utah",
+      "city": "Grandview near Westridge Elementary School, Provo",
+      "state": "Utah",
+      "country": "US",
+      "country_iso3166": "US",
+      "latitude": "40.256039",
+      "longitude": "-111.683937",
+      "elevation": "4678 ft"
+    },
+    "estimated": {
+    },
+    "station_id": "KUTPROVO10",
+    "observation_time": "Last Updated on January 9, 2:43 AM MST",
+    "observation_time_rfc822": "Sat, 09 Jan 2016 02:43:17 -0700",
+    "observation_epoch": "1452332597",
+    "local_time_rfc822": "Sat, 09 Jan 2016 02:43:23 -0700",
+    "local_epoch": "1452332603",
+    "local_tz_short": "MST",
+    "local_tz_long": "America/Denver",
+    "local_tz_offset": "-0700",
+    "weather": "Overcast",
+    "temperature_string": "31.3 F (-0.4 C)",
+    "temp_f": 31.3,
+    "temp_c": -0.4,
+    "relative_humidity": "80%",
+    "wind_string": "Calm",
+    "wind_dir": "WSW",
+    "wind_degrees": 248,
+    "wind_mph": 0.2,
+    "wind_gust_mph": "2.5",
+    "wind_kph": 0,
+    "wind_gust_kph": "4.0",
+    "pressure_mb": "1018",
+    "pressure_in": "30.08",
+    "pressure_trend": "+",
+    "dewpoint_string": "26 F (-3 C)",
+    "dewpoint_f": 26,
+    "dewpoint_c": -3,
+    "heat_index_string": "NA",
+    "heat_index_f": "NA",
+    "heat_index_c": "NA",
+    "windchill_string": "31 F (0 C)",
+    "windchill_f": "31",
+    "windchill_c": "0",
+    "feelslike_string": "31 F (0 C)",
+    "feelslike_f": "31",
+    "feelslike_c": "0",
+    "visibility_mi": "10.0",
+    "visibility_km": "16.1",
+    "solarradiation": "0",
+    "UV": "0.0",
+    "precip_1hr_string": "0.00 in ( 0 mm)",
+    "precip_1hr_in": "0.00",
+    "precip_1hr_metric": " 0",
+    "precip_today_string": "0.00 in (0 mm)",
+    "precip_today_in": "0.00",
+    "precip_today_metric": "0",
+    "icon": "cloudy",
+    "icon_url": "http://icons.wxug.com/i/c/k/nt_cloudy.gif",
+    "forecast_url": "http://www.wunderground.com/US/UT/Provo.html",
+    "history_url": "http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KUTPROVO10",
+    "ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=40.256039,-111.683937",
+    "nowcast": ""
+  },
+  "forecast": {
+    "txt_forecast": {
+      "date": "1:51 AM MST",
+      "forecastday": [
+        {
+          "period": 0,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Saturday",
+          "fcttext": "Partly cloudy skies. High 34F. Winds light and variable.",
+          "fcttext_metric": "Partly cloudy skies. High 1C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 1,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Saturday Night",
+          "fcttext": "Partly cloudy. Low 17F. Winds light and variable.",
+          "fcttext_metric": "A few clouds from time to time. Low -8C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 2,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Sunday",
+          "fcttext": "Intervals of clouds and sunshine. High near 30F. Winds light and variable.",
+          "fcttext_metric": "Partly cloudy. High -1C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 3,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Sunday Night",
+          "fcttext": "A few clouds. Low 13F. Winds light and variable.",
+          "fcttext_metric": "A few clouds from time to time. Low near -10C. Winds light and variable.",
+          "pop": "10"
+        },
+        {
+          "period": 4,
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "title": "Monday",
+          "fcttext": "Sunny skies. High around 30F. Winds light and variable.",
+          "fcttext_metric": "Mainly sunny. High -1C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 5,
+          "icon": "nt_clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+          "title": "Monday Night",
+          "fcttext": "Clear skies. Low 13F. Winds light and variable.",
+          "fcttext_metric": "Mainly clear. Low -11C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 6,
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "title": "Tuesday",
+          "fcttext": "Partly cloudy skies. High 32F. Winds light and variable.",
+          "fcttext_metric": "Partly cloudy skies. High near 0C. Winds light and variable.",
+          "pop": "0"
+        },
+        {
+          "period": 7,
+          "icon": "nt_partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+          "title": "Tuesday Night",
+          "fcttext": "Partly cloudy skies. Low 16F. Winds light and variable.",
+          "fcttext_metric": "Some clouds early will give way to generally clear conditions overnight. Low -9C. Winds light and variable.",
+          "pop": "0"
+        }
+      ]
+    },
+    "simpleforecast": {
+      "forecastday": [
+        {
+          "date": {
+            "epoch": "1452391200",
+            "pretty": "7:00 PM MST on January 09, 2016",
+            "day": 9,
+            "month": 1,
+            "year": 2016,
+            "yday": 8,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Sat",
+            "weekday": "Saturday",
+            "ampm": "PM",
+            "tz_short": "MST",
+            "tz_long": "America/Denver"
+          },
+          "period": 1,
+          "high": {
+            "fahrenheit": "34",
+            "celsius": "1"
+          },
+          "low": {
+            "fahrenheit": "17",
+            "celsius": "-8"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 5,
+            "kph": 8,
+            "dir": "S",
+            "degrees": 180
+          },
+          "avewind": {
+            "mph": 4,
+            "kph": 6,
+            "dir": "S",
+            "degrees": 180
+          },
+          "avehumidity": 81,
+          "maxhumidity": 100,
+          "minhumidity": 69
+        },
+        {
+          "date": {
+            "epoch": "1452477600",
+            "pretty": "7:00 PM MST on January 10, 2016",
+            "day": 10,
+            "month": 1,
+            "year": 2016,
+            "yday": 9,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Sun",
+            "weekday": "Sunday",
+            "ampm": "PM",
+            "tz_short": "MST",
+            "tz_long": "America/Denver"
+          },
+          "period": 2,
+          "high": {
+            "fahrenheit": "30",
+            "celsius": "-1"
+          },
+          "low": {
+            "fahrenheit": "13",
+            "celsius": "-11"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 5,
+            "kph": 8,
+            "dir": "SW",
+            "degrees": 235
+          },
+          "avewind": {
+            "mph": 4,
+            "kph": 6,
+            "dir": "SW",
+            "degrees": 235
+          },
+          "avehumidity": 77,
+          "maxhumidity": 87,
+          "minhumidity": 67
+        },
+        {
+          "date": {
+            "epoch": "1452564000",
+            "pretty": "7:00 PM MST on January 11, 2016",
+            "day": 11,
+            "month": 1,
+            "year": 2016,
+            "yday": 10,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Mon",
+            "weekday": "Monday",
+            "ampm": "PM",
+            "tz_short": "MST",
+            "tz_long": "America/Denver"
+          },
+          "period": 3,
+          "high": {
+            "fahrenheit": "30",
+            "celsius": "-1"
+          },
+          "low": {
+            "fahrenheit": "13",
+            "celsius": "-11"
+          },
+          "conditions": "Clear",
+          "icon": "clear",
+          "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 5,
+            "kph": 8,
+            "dir": "S",
+            "degrees": 172
+          },
+          "avewind": {
+            "mph": 3,
+            "kph": 5,
+            "dir": "S",
+            "degrees": 172
+          },
+          "avehumidity": 76,
+          "maxhumidity": 88,
+          "minhumidity": 63
+        },
+        {
+          "date": {
+            "epoch": "1452650400",
+            "pretty": "7:00 PM MST on January 12, 2016",
+            "day": 12,
+            "month": 1,
+            "year": 2016,
+            "yday": 11,
+            "hour": 19,
+            "min": "00",
+            "sec": 0,
+            "isdst": "0",
+            "monthname": "January",
+            "monthname_short": "Jan",
+            "weekday_short": "Tue",
+            "weekday": "Tuesday",
+            "ampm": "PM",
+            "tz_short": "MST",
+            "tz_long": "America/Denver"
+          },
+          "period": 4,
+          "high": {
+            "fahrenheit": "32",
+            "celsius": "0"
+          },
+          "low": {
+            "fahrenheit": "16",
+            "celsius": "-9"
+          },
+          "conditions": "Partly Cloudy",
+          "icon": "partlycloudy",
+          "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+          "skyicon": "",
+          "pop": 0,
+          "qpf_allday": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_day": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "qpf_night": {
+            "in": 0.00,
+            "mm": 0
+          },
+          "snow_allday": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_day": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "snow_night": {
+            "in": 0.0,
+            "cm": 0.0
+          },
+          "maxwind": {
+            "mph": 5,
+            "kph": 8,
+            "dir": "ENE",
+            "degrees": 60
+          },
+          "avewind": {
+            "mph": 4,
+            "kph": 6,
+            "dir": "ENE",
+            "degrees": 60
+          },
+          "avehumidity": 62,
+          "maxhumidity": 72,
+          "minhumidity": 52
+        }
+      ]
+    }
+  },
+  "hourly_forecast": [
+    {
+      "FCTTIME": {
+        "hour": "3",
+        "hour_padded": "03",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452333600",
+        "pretty": "3:00 AM MST on January 09, 2016",
+        "civil": "3:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "condition": "Overcast",
+      "icon": "cloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_cloudy.gif",
+      "fctcode": "4",
+      "sky": "90",
+      "wspd": {
+        "english": "7",
+        "metric": "11"
+      },
+      "wdir": {
+        "dir": "SSW",
+        "degrees": "209"
+      },
+      "wx": "Cloudy",
+      "uvi": "0",
+      "humidity": "87",
+      "windchill": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "0",
+      "mslp": {
+        "english": "30.23",
+        "metric": "1024"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "4",
+        "hour_padded": "04",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452337200",
+        "pretty": "4:00 AM MST on January 09, 2016",
+        "civil": "4:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "condition": "Overcast",
+      "icon": "cloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_cloudy.gif",
+      "fctcode": "4",
+      "sky": "85",
+      "wspd": {
+        "english": "7",
+        "metric": "11"
+      },
+      "wdir": {
+        "dir": "S",
+        "degrees": "186"
+      },
+      "wx": "Cloudy",
+      "uvi": "0",
+      "humidity": "89",
+      "windchill": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "0",
+      "mslp": {
+        "english": "30.24",
+        "metric": "1024"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "5",
+        "hour_padded": "05",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452340800",
+        "pretty": "5:00 AM MST on January 09, 2016",
+        "civil": "5:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "77",
+      "wspd": {
+        "english": "5",
+        "metric": "8"
+      },
+      "wdir": {
+        "dir": "SE",
+        "degrees": "145"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "0",
+      "humidity": "91",
+      "windchill": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "0",
+      "mslp": {
+        "english": "30.24",
+        "metric": "1024"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "6",
+        "hour_padded": "06",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452344400",
+        "pretty": "6:00 AM MST on January 09, 2016",
+        "civil": "6:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "dewpoint": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "64",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "ESE",
+        "degrees": "111"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "0",
+      "humidity": "100",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "0",
+      "mslp": {
+        "english": "30.26",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "7",
+        "hour_padded": "07",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452348000",
+        "pretty": "7:00 AM MST on January 09, 2016",
+        "civil": "7:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "dewpoint": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "63",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "ESE",
+        "degrees": "107"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "0",
+      "humidity": "98",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "1",
+      "mslp": {
+        "english": "30.28",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "8",
+        "hour_padded": "08",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452351600",
+        "pretty": "8:00 AM MST on January 09, 2016",
+        "civil": "8:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "58",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "ESE",
+        "degrees": "123"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "95",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.29",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "9",
+        "hour_padded": "09",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452355200",
+        "pretty": "9:00 AM MST on January 09, 2016",
+        "civil": "9:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "27",
+        "metric": "-3"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "61",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "SSE",
+        "degrees": "157"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "0",
+      "humidity": "90",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "27",
+        "metric": "-3"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "4",
+      "mslp": {
+        "english": "30.3",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "10",
+        "hour_padded": "10",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452358800",
+        "pretty": "10:00 AM MST on January 09, 2016",
+        "civil": "10:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "63",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "S",
+        "degrees": "179"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "1",
+      "humidity": "88",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.3",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "11",
+        "hour_padded": "11",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452362400",
+        "pretty": "11:00 AM MST on January 09, 2016",
+        "civil": "11:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "30",
+        "metric": "-1"
+      },
+      "dewpoint": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "condition": "Mostly Cloudy",
+      "icon": "mostlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+      "fctcode": "3",
+      "sky": "60",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "SSW",
+        "degrees": "201"
+      },
+      "wx": "Mostly Cloudy",
+      "uvi": "1",
+      "humidity": "82",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "30",
+        "metric": "-1"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "4",
+      "mslp": {
+        "english": "30.31",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "12",
+        "hour_padded": "12",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452366000",
+        "pretty": "12:00 PM MST on January 09, 2016",
+        "civil": "12:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "30",
+        "metric": "-1"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "57",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "SW",
+        "degrees": "217"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "2",
+      "humidity": "78",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "30",
+        "metric": "-1"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.29",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "13",
+        "hour_padded": "13",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452369600",
+        "pretty": "1:00 PM MST on January 09, 2016",
+        "civil": "1:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "31",
+        "metric": "-1"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "52",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "SW",
+        "degrees": "226"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "2",
+      "humidity": "74",
+      "windchill": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.27",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "14",
+        "hour_padded": "14",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452373200",
+        "pretty": "2:00 PM MST on January 09, 2016",
+        "civil": "2:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "32",
+        "metric": "0"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "47",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "SW",
+        "degrees": "224"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "1",
+      "humidity": "71",
+      "windchill": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.26",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "15",
+        "hour_padded": "15",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452376800",
+        "pretty": "3:00 PM MST on January 09, 2016",
+        "civil": "3:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "33",
+        "metric": "1"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "39",
+      "wspd": {
+        "english": "5",
+        "metric": "8"
+      },
+      "wdir": {
+        "dir": "SSW",
+        "degrees": "214"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "1",
+      "humidity": "69",
+      "windchill": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.25",
+        "metric": "1024"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "16",
+        "hour_padded": "16",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452380400",
+        "pretty": "4:00 PM MST on January 09, 2016",
+        "civil": "4:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "32",
+        "metric": "0"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "33",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "S",
+        "degrees": "189"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "72",
+      "windchill": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "28",
+        "metric": "-2"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.25",
+        "metric": "1024"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "17",
+        "hour_padded": "17",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452384000",
+        "pretty": "5:00 PM MST on January 09, 2016",
+        "civil": "5:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "31",
+        "metric": "-1"
+      },
+      "dewpoint": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/clear.gif",
+      "fctcode": "1",
+      "sky": "21",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "SSE",
+        "degrees": "164"
+      },
+      "wx": "Mostly Sunny",
+      "uvi": "0",
+      "humidity": "76",
+      "windchill": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.26",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "18",
+        "hour_padded": "18",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452387600",
+        "pretty": "6:00 PM MST on January 09, 2016",
+        "civil": "6:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "20",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "SE",
+        "degrees": "140"
+      },
+      "wx": "Mostly Clear",
+      "uvi": "0",
+      "humidity": "77",
+      "windchill": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "24",
+        "metric": "-4"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.27",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "19",
+        "hour_padded": "19",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452391200",
+        "pretty": "7:00 PM MST on January 09, 2016",
+        "civil": "7:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "27",
+        "metric": "-3"
+      },
+      "dewpoint": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "19",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "ESE",
+        "degrees": "103"
+      },
+      "wx": "Clear",
+      "uvi": "0",
+      "humidity": "77",
+      "windchill": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.28",
+        "metric": "1025"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "20",
+        "hour_padded": "20",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452394800",
+        "pretty": "8:00 PM MST on January 09, 2016",
+        "civil": "8:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "dewpoint": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "16",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "85"
+      },
+      "wx": "Clear",
+      "uvi": "0",
+      "humidity": "77",
+      "windchill": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.29",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "21",
+        "hour_padded": "21",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452398400",
+        "pretty": "9:00 PM MST on January 09, 2016",
+        "civil": "9:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "dewpoint": {
+        "english": "18",
+        "metric": "-8"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "15",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "85"
+      },
+      "wx": "Clear",
+      "uvi": "0",
+      "humidity": "76",
+      "windchill": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.3",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "22",
+        "hour_padded": "22",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452402000",
+        "pretty": "10:00 PM MST on January 09, 2016",
+        "civil": "10:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "dewpoint": {
+        "english": "17",
+        "metric": "-8"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "16",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "85"
+      },
+      "wx": "Clear",
+      "uvi": "0",
+      "humidity": "76",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.31",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "23",
+        "hour_padded": "23",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "9",
+        "mday_padded": "09",
+        "yday": "8",
+        "isdst": "0",
+        "epoch": "1452405600",
+        "pretty": "11:00 PM MST on January 09, 2016",
+        "civil": "11:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Saturday",
+        "weekday_name_night": "Saturday Night",
+        "weekday_name_abbrev": "Sat",
+        "weekday_name_unlang": "Saturday",
+        "weekday_name_night_unlang": "Saturday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "dewpoint": {
+        "english": "16",
+        "metric": "-9"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "30",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "86"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "77",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "22",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "3",
+      "mslp": {
+        "english": "30.31",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "0",
+        "hour_padded": "00",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452409200",
+        "pretty": "12:00 AM MST on January 10, 2016",
+        "civil": "12:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "31",
+      "wspd": {
+        "english": "4",
+        "metric": "6"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "83"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "78",
+      "windchill": {
+        "english": "16",
+        "metric": "-9"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "16",
+        "metric": "-9"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.31",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "1",
+        "hour_padded": "01",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452412800",
+        "pretty": "1:00 AM MST on January 10, 2016",
+        "civil": "1:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "28",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "83"
+      },
+      "wx": "Mostly Clear",
+      "uvi": "0",
+      "humidity": "78",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.31",
+        "metric": "1026"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "2",
+        "hour_padded": "02",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452416400",
+        "pretty": "2:00 AM MST on January 10, 2016",
+        "civil": "2:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "27",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "83"
+      },
+      "wx": "Mostly Clear",
+      "uvi": "0",
+      "humidity": "78",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.32",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "3",
+        "hour_padded": "03",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452420000",
+        "pretty": "3:00 AM MST on January 10, 2016",
+        "civil": "3:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Clear",
+      "icon": "clear",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_clear.gif",
+      "fctcode": "1",
+      "sky": "29",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "83"
+      },
+      "wx": "Mostly Clear",
+      "uvi": "0",
+      "humidity": "81",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.32",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "4",
+        "hour_padded": "04",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452423600",
+        "pretty": "4:00 AM MST on January 10, 2016",
+        "civil": "4:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "14",
+        "metric": "-10"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "46",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "86"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "79",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.32",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "5",
+        "hour_padded": "05",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452427200",
+        "pretty": "5:00 AM MST on January 10, 2016",
+        "civil": "5:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "45",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "86"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "83",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.32",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "6",
+        "hour_padded": "06",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452430800",
+        "pretty": "6:00 AM MST on January 10, 2016",
+        "civil": "6:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "14",
+        "metric": "-10"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "42",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "85"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "81",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.33",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "7",
+        "hour_padded": "07",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452434400",
+        "pretty": "7:00 AM MST on January 10, 2016",
+        "civil": "7:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "18",
+        "metric": "-8"
+      },
+      "dewpoint": {
+        "english": "13",
+        "metric": "-11"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "42",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "84"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "79",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "18",
+        "metric": "-8"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.34",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "8",
+        "hour_padded": "08",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452438000",
+        "pretty": "8:00 AM MST on January 10, 2016",
+        "civil": "8:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "dewpoint": {
+        "english": "14",
+        "metric": "-10"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "43",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "89"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "79",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.35",
+        "metric": "1028"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "9",
+        "hour_padded": "09",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452441600",
+        "pretty": "9:00 AM MST on January 10, 2016",
+        "civil": "9:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "42",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "E",
+        "degrees": "96"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "0",
+      "humidity": "77",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "21",
+        "metric": "-6"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.36",
+        "metric": "1028"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "10",
+        "hour_padded": "10",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452445200",
+        "pretty": "10:00 AM MST on January 10, 2016",
+        "civil": "10:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "dewpoint": {
+        "english": "15",
+        "metric": "-9"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "38",
+      "wspd": {
+        "english": "1",
+        "metric": "2"
+      },
+      "wdir": {
+        "dir": "ESE",
+        "degrees": "103"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "1",
+      "humidity": "72",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "23",
+        "metric": "-5"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.37",
+        "metric": "1028"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "11",
+        "hour_padded": "11",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452448800",
+        "pretty": "11:00 AM MST on January 10, 2016",
+        "civil": "11:00 AM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "AM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "dewpoint": {
+        "english": "18",
+        "metric": "-8"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "32",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "SW",
+        "degrees": "225"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "1",
+      "humidity": "73",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "25",
+        "metric": "-4"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.37",
+        "metric": "1028"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "12",
+        "hour_padded": "12",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452452400",
+        "pretty": "12:00 PM MST on January 10, 2016",
+        "civil": "12:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "dewpoint": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "37",
+      "wspd": {
+        "english": "2",
+        "metric": "3"
+      },
+      "wdir": {
+        "dir": "W",
+        "degrees": "282"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "2",
+      "humidity": "73",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "26",
+        "metric": "-3"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.36",
+        "metric": "1028"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "13",
+        "hour_padded": "13",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452456000",
+        "pretty": "1:00 PM MST on January 10, 2016",
+        "civil": "1:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "27",
+        "metric": "-3"
+      },
+      "dewpoint": {
+        "english": "19",
+        "metric": "-7"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "39",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "W",
+        "degrees": "279"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "2",
+      "humidity": "70",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "27",
+        "metric": "-3"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.34",
+        "metric": "1027"
+      }
+    },
+    {
+      "FCTTIME": {
+        "hour": "14",
+        "hour_padded": "14",
+        "min": "00",
+        "min_unpadded": "0",
+        "sec": "0",
+        "year": "2016",
+        "mon": "1",
+        "mon_padded": "01",
+        "mon_abbrev": "Jan",
+        "mday": "10",
+        "mday_padded": "10",
+        "yday": "9",
+        "isdst": "0",
+        "epoch": "1452459600",
+        "pretty": "2:00 PM MST on January 10, 2016",
+        "civil": "2:00 PM",
+        "month_name": "January",
+        "month_name_abbrev": "Jan",
+        "weekday_name": "Sunday",
+        "weekday_name_night": "Sunday Night",
+        "weekday_name_abbrev": "Sun",
+        "weekday_name_unlang": "Sunday",
+        "weekday_name_night_unlang": "Sunday Night",
+        "ampm": "PM",
+        "tz": "",
+        "age": "",
+        "UTCDATE": ""
+      },
+      "temp": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "dewpoint": {
+        "english": "20",
+        "metric": "-7"
+      },
+      "condition": "Partly Cloudy",
+      "icon": "partlycloudy",
+      "icon_url": "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+      "fctcode": "2",
+      "sky": "38",
+      "wspd": {
+        "english": "3",
+        "metric": "5"
+      },
+      "wdir": {
+        "dir": "WNW",
+        "degrees": "282"
+      },
+      "wx": "Partly Cloudy",
+      "uvi": "1",
+      "humidity": "69",
+      "windchill": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "heatindex": {
+        "english": "-9999",
+        "metric": "-9999"
+      },
+      "feelslike": {
+        "english": "29",
+        "metric": "-2"
+      },
+      "qpf": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "snow": {
+        "english": "0.0",
+        "metric": "0"
+      },
+      "pop": "2",
+      "mslp": {
+        "english": "30.33",
+        "metric": "1027"
+      }
+    }
+  ],
+  "query_zone": "004",
+  "alerts": [
+  ]
+}
