@@ -3357,5 +3357,41 @@
   ],
   "query_zone": "004",
   "alerts": [
-  ]
+  ],
+  "moon_phase": {
+    "percentIlluminated": "0",
+    "ageOfMoon": "0",
+    "phaseofMoon": "New Moon",
+    "hemisphere": "North",
+    "current_time": {
+      "hour": "2",
+      "minute": "45"
+    },
+    "sunrise": {
+      "hour": "7",
+      "minute": "48"
+    },
+    "sunset": {
+      "hour": "17",
+      "minute": "19"
+    },
+    "moonrise": {
+      "hour": "8",
+      "minute": "00"
+    },
+    "moonset": {
+      "hour": "18",
+      "minute": "28"
+    }
+  },
+  "sun_phase": {
+    "sunrise": {
+      "hour": "7",
+      "minute": "48"
+    },
+    "sunset": {
+      "hour": "17",
+      "minute": "19"
+    }
+  }
 }

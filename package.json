@@ -2,6 +2,7 @@
   "name": "magicmirror",
   "version": "0.0.1",
   "description": "An Angular app for a magic mirror interface.  It will display weather, calendar items, etc... for people in my house",
+  "repository": "https://github.com/mlaulusa/magic-mirror",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Implement this later\"",
@@ -16,6 +17,7 @@
     "express": "^4.13.3",
     "morgan": "^1.6.1",
     "request-promise": "^1.0.2",
+    "rethinkdbdash": "^2.2.15",
     "socket.io": "^1.4.3"
   },
   "devDependencies": {
