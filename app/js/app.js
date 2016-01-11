@@ -1,35 +1,12 @@
 angular.module('magicmirror', [
         'magicmirror.services',
         'magicmirror.controllers',
+        'magicmirror.directives',
 
-        'ui.router'
+        'btford.socket-io'
     ])
 
-    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider){
-        $urlRouterProvider.otherwise('/');
-
-        $stateProvider
-            .state('home', {
-                url: '/',
-                views: {
-
-                    '': {
-                        template: '<p>{{main.value}}</p>',
-                        controller: 'MainCtrl as main'
-                    },
-
-                    'weather': {
-                        templateUrl: 'templates/weather.html',
-                        controller: 'WeatherCtrl as weather'
-                    },
-
-                    'time': {
-                        templateUrl: 'templates/time.html',
-                        controller: 'TimeCtrl as time'
-                    }
-                }
-            });
-    }])
+    //.config([])
 
     .run(function (){
         console.log('Run once on app start');

@@ -6,4 +6,8 @@ var app = require('./'),
     }, app),
     io = require('socket.io').listen(server);
 
+io.sockets.on('connection', function(socket){
+  console.log('Someone connected!');
+});
+
 module.exports = server;
