@@ -41,7 +41,8 @@ new CronJob('*/30 * * * *', function (){
             forecast: {
                 location: data.current_observation.display_location.full,
                 date_retreived: new Date(),
-                day_one: {
+                day_forecast: [
+                {
                     date: {
                         epoch: data.forecast.simpleforecast.forecastday[0].date.epoch,
                         month_name: data.forecast.simpleforecast.forecastday[0].date.monthname,
@@ -68,7 +69,7 @@ new CronJob('*/30 * * * *', function (){
                     }
                 },
 
-                day_two: {
+                {
                     date: {
                         epoch: data.forecast.simpleforecast.forecastday[1].date.epoch,
                         month_name: data.forecast.simpleforecast.forecastday[1].date.monthname,
@@ -95,7 +96,7 @@ new CronJob('*/30 * * * *', function (){
                     }
                 },
 
-                day_three: {
+                {
                     date: {
                         epoch: data.forecast.simpleforecast.forecastday[2].date.epoch,
                         month_name: data.forecast.simpleforecast.forecastday[2].date.monthname,
@@ -122,7 +123,7 @@ new CronJob('*/30 * * * *', function (){
                     }
                 },
 
-                day_four: {
+                {
                     date: {
                         epoch: data.forecast.simpleforecast.forecastday[3].date.epoch,
                         month_name: data.forecast.simpleforecast.forecastday[3].date.monthname,
@@ -148,7 +149,7 @@ new CronJob('*/30 * * * *', function (){
                         max: data.forecast.simpleforecast.forecastday[3].maxwind
                     }
                 }
-            },
+            ]},
             astronomy: {
                 location: data.current_observation.display_location.full,
                 date_retreived: new Date(),

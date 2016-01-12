@@ -1,6 +1,13 @@
-<p>
-    sight
-</p>
-<p>{{value}}</p>
-
-<p>{{forecast.location}}</p>
+<ul ng-repeat="forecast in weather.forecast.day_forecast">
+  <li>
+    <p>
+      {{forecast.date.day_name}} {{forecast.condition}}
+    </p>
+    <p>
+      {{forecast.low.fahrenheit}}&deg; - {{forecast.high.fahrenheit}}&deg;
+    </p>
+    <p>
+      {{forecast.wind.average.mph}}
+    </p>
+  </li>
+</ul>
