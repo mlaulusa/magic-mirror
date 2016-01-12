@@ -13,6 +13,14 @@ angular.module('magicmirror.services', [])
         }
     }])
 
+    .factory('TestFactory', [function(){
+        return {
+            testFunction: function(){
+                return "test string from factory";
+            }
+        }
+    }])
+
     .factory('socket', ['$rootScope', function($rootScope){
       var socket = io.connect();
       return {
