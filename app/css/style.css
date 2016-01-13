@@ -1,0 +1,31 @@
+body {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+weather {
+    float: right;
+    margin-right: 80px;
+    width: 30%;
+}
+
+weather ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.current {
+    font-size: 28px;
+    border-bottom: 1px white solid;
+    margin: 16px 24px 20px 10px;
+/*    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;*/
+    width: 100%;
+}
+
+.current h2 {
+    margin: 2px;
+}

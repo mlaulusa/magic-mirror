@@ -1,13 +1,13 @@
-<ul ng-repeat="forecast in weather.forecast.day_forecast">
-  <li>
-    <p>
-      {{forecast.date.day_name}} {{forecast.condition}}
-    </p>
-    <p>
-      {{forecast.low.fahrenheit}}&deg; - {{forecast.high.fahrenheit}}&deg;
-    </p>
-    <p>
-      {{forecast.wind.average.mph}}
-    </p>
-  </li>
+<ul>
+    <li ng-class="{'current':$first}" ng-repeat="forecast in weather.forecast.day_forecast">
+        <h1>
+            {{forecast.date.day_name}}
+        </h1>
+        <p>
+            {{forecast.condition}}
+        </p>
+        <p>
+            Low: {{forecast.low.fahrenheit}}&deg; High: {{forecast.high.fahrenheit}}&deg; <!--{{forecast.wind.average.mph}} mph-->
+        </p>
+    </li>
 </ul>
