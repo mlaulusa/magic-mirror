@@ -1,5 +1,14 @@
+<div class="current">
+  <h1>{{weather.conditions.date_retreived}}</h1>
+  <p>
+    {{weather.conditions.condition}}
+  </p>
+  <p>
+    {{weather.conditions.temp}}
+  </p>
+</div>
 <ul>
-    <li ng-class="{'current':$first}" ng-repeat="forecast in weather.forecast.day_forecast">
+    <li ng-repeat="forecast in weather.forecast.day_forecast">
         <h1>
             {{forecast.date.day_name}}
         </h1>

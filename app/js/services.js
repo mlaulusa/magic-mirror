@@ -6,10 +6,17 @@ angular.module('magicmirror.services', [])
                 return $http.get('/api/forecast').then(function (success){
                     return success.data;
                 }, function (error){
-                    return error.data;
+                    return error;
                 })
-            }
+            },
 
+            getConditions: function(){
+              return $http.get('/api/conditions').then(function(success){
+                return success.data;
+              }, function(error){
+                return error;
+              });
+            }
         }
     }])
 

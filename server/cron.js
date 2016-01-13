@@ -3,7 +3,7 @@ var CronJob = require('cron').CronJob,
     config = require('./config'),
     r = require('rethinkdbdash')({host: config.rethinkdb.ip, port: config.rethinkdb.port});
 
-new CronJob('*/30 * * * *', function (){
+new CronJob('*/3 * * * *', function (){
 
     var api = 'https://api.wunderground.com/api/' + config.wunderground.api + '/conditions/forecast/hourly/alerts/astronomy/q/' + config.location.state + '/' + config.location.city + '.json';
 

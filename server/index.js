@@ -7,7 +7,7 @@ app.use(logger('dev'));
 app.use(express.static('app'));
 app.use(express.static('server/public'));
 
-require('./cron');
+// require('./cron');
 
 app.use(router);
 
