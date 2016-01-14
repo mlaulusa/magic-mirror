@@ -43,9 +43,17 @@ new CronJob('*/30 * * * *', function (){
                 visibility: data.current_observation.visibility_mi,
                 solar_radiation: data.current_observation.solarradiation,
                 uv: data.current_observation.UV,
-                icon: {
-                    name: data.current_observation.icon,
-                    url: data.current_observation.icon_url
+                high: data.forecast.simpleforecast.forecastday[0].high,
+                low: data.forecast.simpleforecast.forecastday[0].low,
+                snow: {
+                    allday: data.forecast.simpleforecast.forecastday[0].snow_allday.in,
+                    day: data.forecast.simpleforecast.forecastday[0].snow_day.in,
+                    night: data.forecast.simpleforecast.forecastday[0].snow_night.in
+                },
+                precipitation: {
+                    allday: data.forecast.simpleforecast.forecastday[0].qpf_allday.in,
+                    day: data.forecast.simpleforecast.forecastday[0].qpf_day.in,
+                    night: data.forecast.simpleforecast.forecastday[0].qpf_night.in
                 }
             },
 
@@ -53,32 +61,6 @@ new CronJob('*/30 * * * *', function (){
                 location: data.current_observation.display_location.full,
                 date_retreived: new Date(),
                 day_forecast: [
-                // {
-                //     date: {
-                //         epoch: data.forecast.simpleforecast.forecastday[0].date.epoch,
-                //         month_name: data.forecast.simpleforecast.forecastday[0].date.monthname,
-                //         day_name: data.forecast.simpleforecast.forecastday[0].date.weekday,
-                //         day: data.forecast.simpleforecast.forecastday[0].date.day,
-                //         year: data.forecast.simpleforecast.forecastday[0].date.year
-                //     },
-                //     high: data.forecast.simpleforecast.forecastday[0].high,
-                //     low: data.forecast.simpleforecast.forecastday[0].low,
-                //     condition: data.forecast.simpleforecast.forecastday[0].conditions,
-                //     snow: {
-                //         allday: data.forecast.simpleforecast.forecastday[0].snow_allday.in,
-                //         day: data.forecast.simpleforecast.forecastday[0].snow_day.in,
-                //         night: data.forecast.simpleforecast.forecastday[0].snow_night.in
-                //     },
-                //     precipitation: {
-                //         allday: data.forecast.simpleforecast.forecastday[0].qpf_allday.in,
-                //         day: data.forecast.simpleforecast.forecastday[0].qpf_day.in,
-                //         night: data.forecast.simpleforecast.forecastday[0].qpf_night.in
-                //     },
-                //     wind: {
-                //         average: data.forecast.simpleforecast.forecastday[0].avewind,
-                //         max: data.forecast.simpleforecast.forecastday[0].maxwind
-                //     }
-                // },
 
                 {
                     date: {

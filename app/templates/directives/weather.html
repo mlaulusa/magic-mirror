@@ -1,11 +1,10 @@
-<div class="current">
-    <p>{{weather.time | date:'shortTime'}}</p>
+<div id="current">
     <h1>{{weather.conditions.date_retreived | date:'EEEE'}}</h1>
-    <p>
-        <i class="wi wi-wu-chanceflurries snow-wind"></i>
+    <p id="current-condition">
+        <i class="wi wi-wu-chanceflurries snow-wind" style="display: block;"></i>
         {{weather.conditions.condition}}
     </p>
-    <p>
+    <p id="current-temp">
         {{weather.conditions.fahrenheit.temp}}&deg;
     </p>
 </div>
@@ -16,10 +15,7 @@
             {{forecast.date.day_name}}
         </h1>
         <p>
-            {{forecast.condition}}
-        </p>
-        <p>
-            Low: {{forecast.low.fahrenheit}}&deg; High: {{forecast.high.fahrenheit}}&deg;
+            <span id="forecast-condition">{{forecast.condition}}</span> <span id="forecast-high-low">{{forecast.low.fahrenheit}}&deg; : <strong>{{forecast.high.fahrenheit}}&deg;</strong></span>
             <!--{{forecast.wind.average.mph}} mph-->
         </p>
     </li>

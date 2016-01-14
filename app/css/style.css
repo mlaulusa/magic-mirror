@@ -16,14 +16,40 @@ weather ul li {
     text-align: center;
 }
 
-.current {
+#current {
     font-size: 28px;
     border-bottom: 1px white solid;
-    margin: 16px 24px 20px 10px;
     width: 100%;
     text-align: center;
+    padding-bottom: 40px;
 }
 
-.current h2 {
-    margin: 2px;
+#time {
+    font-size: 77px;
+    float: left;
+    margin: 50px;
+}
+
+span#forecast-condition {
+  margin-right: 5px;
+}
+
+span#forecast-high-low {
+  margin-left: 5px;
+}
+
+p#current-temp {
+  display: inline;
+  width: 40%;
+  padding: 10px;
+}
+
+p#current-temp i {
+  display: block;
+}
+
+p#current-condition {
+  display: inline;
+  width: 40%;
+  padding: 10px;
 }

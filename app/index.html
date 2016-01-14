@@ -12,7 +12,8 @@
 </head>
 <body ng-app="magicmirror" ng-controller="MainCtrl as main">
 
-<weather></weather>
+    <span id="time">{{main.time | date:'shortTime'}}</span>
+    <weather></weather>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-socket-io/socket.js"></script>

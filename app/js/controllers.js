@@ -1,11 +1,15 @@
 angular.module('magicmirror.controllers', [])
 
-    .controller('MainCtrl', ['$log', 'TestFactory', function ($log, TestFactory) {
+    .controller('MainCtrl', ['$log', '$interval', function ($log, $interval) {
         var vm = this;
-        //vm.test = TestFactory.testFunction();
+
+        $interval(function(){
+            vm.time = Date.now();
+        }, 500);
+
     }])
 
-    .controller('WeatherCtrl', ['$log', '$interval', 'socket', 'WeatherFactory', function ($log, $interval, socket, WeatherFactory) {
+    .controller('WeatherCtrl', ['$log', 'socket', 'WeatherFactory', function ($log, socket, WeatherFactory) {
         var vm = this;
 
         WeatherFactory.getForecast().then(function (data) {
@@ -42,10 +46,6 @@ angular.module('magicmirror.controllers', [])
             }, vm);
 
         });
-
-        $interval(function(){
-            vm.time = Date.now();
-        }, 500);
 
         socket.on('update-forecast', function (data) {
             vm.forecast = data;
