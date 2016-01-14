@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "angular": "~1.4.8",
-    "angular-socket-io": "~0.7.0"
+    "angular-socket-io": "~0.7.0",
+    "weather-icons": "~2.0.10"
   }
 }

@@ -185,7 +185,7 @@ new CronJob('*/30 * * * *', function (){
 
         r.db('weather').table('conditions').insert(weather.conditions).then(function(results){
             console.log('Inserted into conditions table');
-            io.sockets.emit('update-forecast', weather.conditions);
+            io.sockets.emit('update-condition', weather.conditions);
         }).catch(function(err){
             console.log(err);
         });
