@@ -8,7 +8,7 @@ var app = require('./'),
     CronJob = require('cron').CronJob,
     rp = require('request-promise'),
     config = require('./config'),
-    r = require('rethinkdbdash')({host: config.rethinkdb.ip, port: config.rethinkdb.port});
+    r = require('./db');
 
 io.sockets.on('connection', function(socket){
   console.log('Someone connected!');
@@ -54,7 +54,8 @@ new CronJob('*/30 * * * *', function (){
                     allday: data.forecast.simpleforecast.forecastday[0].qpf_allday.in,
                     day: data.forecast.simpleforecast.forecastday[0].qpf_day.in,
                     night: data.forecast.simpleforecast.forecastday[0].qpf_night.in
-                }
+                },
+                icon: data.current_observation.icon
             },
 
             forecast: {
@@ -165,28 +166,28 @@ new CronJob('*/30 * * * *', function (){
             }
         };
 
-        r.db('weather').table('forecast').insert(weather.forecast).then(function(results){
+        r.postForecast(weather.forecast).then(function(results){
             console.log('Inserted into forecast table');
             io.sockets.emit('update-forecast', weather.forecast);
         }).catch(function(err){
             console.log(err);
         });
 
-        r.db('weather').table('conditions').insert(weather.conditions).then(function(results){
+        r.postConditions(weather.conditions).then(function(results){
             console.log('Inserted into conditions table');
             io.sockets.emit('update-condition', weather.conditions);
         }).catch(function(err){
             console.log(err);
         });
 
-        r.db('weather').table('alerts').insert(weather.alerts).then(function(results){
+        r.postAlerts(weather.alerts).then(function(results){
             console.log('Inserted into alerts table');
             io.sockets.emit('update-alerts', weather.alerts);
         }).catch(function(err){
             console.log(err);
         });
 
-        r.db('weather').table('astronomy').insert(weather.astronomy).then(function(results){
+        r.postAstronomy(weather.astronomy).then(function(results){
             console.log('Inserted into astronomy table');
             io.sockets.emit('update-astronomy', weather.astronomy);
         }).catch(function(err){

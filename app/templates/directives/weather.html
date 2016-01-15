@@ -1,7 +1,7 @@
 <div id="current">
     <h1>{{weather.conditions.date_retreived | date:'EEEE'}}</h1>
     <div id="current-condition">
-        <i class="wi wi-wu-chanceflurries snow-wind"></i>
+        <i class="wi wi-wu-{{weather.conditions.icon}}"></i>
         {{weather.conditions.condition}}
     </div>
     <div id="current-temp">

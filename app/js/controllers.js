@@ -1,10 +1,5 @@
 angular.module('magicmirror.controllers', [])
 
-    .controller('MainCtrl', ['$log', '$interval', function ($log, $interval){
-        var vm = this;
-
-    }])
-
     .controller('WeatherCtrl', ['$log', 'socket', 'WeatherFactory', function ($log, socket, WeatherFactory){
         var vm = this;
 
@@ -41,6 +36,7 @@ angular.module('magicmirror.controllers', [])
                 }
             }, vm);
 
+        $log.info(vm.conditions.icon);
         });
 
         socket.on('update-forecast', function (data){
@@ -48,11 +44,7 @@ angular.module('magicmirror.controllers', [])
         });
 
         socket.on('update-condition', function (data){
-            vm.condition = data;
-        });
-
-        socket.on('update-alerts', function (data){
-            vm.alerts = data;
+            vm.conditions = data;
         });
 
     }])
@@ -81,6 +73,18 @@ angular.module('magicmirror.controllers', [])
 
         socket.on('update-astronomy', function (data){
             vm.astronomy = data;
+        });
+
+    }])
+
+    .controller('AlertCtrl', ['$log', 'socket', 'WeatherFactory', function($log, socket, WeatherFactory){
+
+      var vm = this;
+
+      vm.alerts = ['ALERT', 'ANOTHER ALERT', 'GIVE US ANOTHER ONE', 'WARNING!!'];
+
+        socket.on('update-alerts', function (data){
+            vm.alerts = data;
         });
 
     }]);

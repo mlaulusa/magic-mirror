@@ -19,4 +19,13 @@ angular.module('magicmirror.directives', [])
             controller: 'TimeCtrl as time',
             templateUrl: 'templates/directives/time.html'
         }
+    }])
+    .directive('alerts', [function(){
+      return {
+        restrict: 'EA',
+        scope: true,
+        bindToController: {},
+        controller: 'AlertCtrl as alerts',
+        templateUrl: 'templates/directives/alerts.html'
+      }
     }]);

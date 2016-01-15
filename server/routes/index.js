@@ -1,9 +1,9 @@
 var router = require('express').Router(),
     config = require('../config'),
-    r = require('rethinkdbdash')({host: config.rethinkdb.ip, port: config.rethinkdb.port});
+    r = require('../db');
 
 router.get('/api/forecast', function(req, res){
-  r.db('weather').table('forecast').then(function(results){
+  r.getForecast().then(function(results){
     res.status(200);
     res.json(results);
   }).catch(function(err){
@@ -13,7 +13,7 @@ router.get('/api/forecast', function(req, res){
 });
 
 router.get('/api/conditions', function(req ,res){
-  r.db('weather').table('conditions').then(function(results){
+  r.getConditions().then(function(results){
     res.status(200);
     res.json(results);
   }).catch(function(err){
@@ -23,7 +23,7 @@ router.get('/api/conditions', function(req ,res){
 });
 
 router.get('/api/astronomy', function(req, res){
-  r.db('weather').table('astronomy').then(function(results){
+  r.getAstronomy().then(function(results){
     res.status(200);
     res.json(results);
   }).catch(function(err){
@@ -33,18 +33,13 @@ router.get('/api/astronomy', function(req, res){
 });
 
 router.get('/api/alerts', function(req, res){
-  r.db('weather').table('alerts').then(function(results){
+  r.getAlerts().then(function(results){
     res.status(200);
     res.json(results);
   }).catch(function(err){
     res.status(401);
     res.json(err);
   });
-});
-
-router.get('/test', function (req, res){
-    res.status(200);
-    res.send('Hello');
 });
 
 router.get('*', function (req, res){
