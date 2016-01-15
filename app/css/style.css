@@ -5,15 +5,22 @@ body {
     background-color: black;
 }
 
-weather {
-    float: right;
-    margin-right: 80px;
-    width: 30%;
+time {
+    float: left;
+    margin: 50px;
 }
 
-weather ul li {
-    list-style-type: none;
-    text-align: center;
+#current-time {
+    font-size: 77px;
+}
+
+time p {
+    text-align: left;
+}
+
+#date {
+    font-size: 34px;
+    display: block;
 }
 
 #current {
@@ -21,35 +28,49 @@ weather ul li {
     border-bottom: 1px white solid;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
 }
 
-#time {
-    font-size: 77px;
+#current-condition {
+    margin-top: 20px;
+    display: inline;
+    width: 50%;
     float: left;
-    margin: 50px;
 }
 
-span#forecast-condition {
-  margin-right: 5px;
+#current-condition i {
+    display: block;
+    margin-bottom: 30px;
+    transform: scale(2, 2);
 }
 
-span#forecast-high-low {
-  margin-left: 5px;
+#current-temp {
+    display: inline-block;
+    width: 50%;
 }
 
-p#current-temp {
-  display: inline;
-  width: 40%;
-  padding: 10px;
+#current-temp h2 {
+    margin: auto;
 }
 
-p#current-temp i {
-  display: block;
+weather {
+    float: right;
+    margin-right: 80px;
+    width: 30%;
 }
 
-p#current-condition {
-  display: inline;
-  width: 40%;
-  padding: 10px;
+weather ul {
+    padding-left: 0;
+}
+
+weather ul li {
+    list-style-type: none;
+    text-align: right;
+}
+
+span.forecast-condition {
+    margin-right: 5px;
+}
+
+span.forecast-high-low {
+    margin-left: 5px;
 }

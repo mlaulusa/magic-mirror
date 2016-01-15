@@ -10,4 +10,13 @@ angular.module('magicmirror.directives', [])
             },
             templateUrl: 'templates/directives/weather.html'
         }
+    }])
+    .directive('time', [function(){
+        return {
+            restrict: 'EA',
+            scope: true,
+            bindToController: {},
+            controller: 'TimeCtrl as time',
+            templateUrl: 'templates/directives/time.html'
+        }
     }]);

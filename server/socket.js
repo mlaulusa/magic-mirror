@@ -147,8 +147,15 @@ new CronJob('*/30 * * * *', function (){
                 location: data.current_observation.display_location.full,
                 date_retreived: new Date(),
                 sunrise: data.sun_phase.sunrise,
-                sunset: data.sun_phase.sunset,
-                moon_phase: data.moon_phase.phaseofMoon
+                sunset: {
+                    hour: data.sun_phase.sunset.hour % 12,
+                    minute: data.sun_phase.sunset.minute
+                },
+                moon_phase: {
+                    age: data.moon_phase.ageOfMoon,
+                    phase: data.moon_phase.phaseofMoon,
+                    illuminated: data.moon_phase.percentIlluminated
+                }
             },
 
             alerts: {

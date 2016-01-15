@@ -10,44 +10,44 @@ angular.module('magicmirror.services', [])
                 })
             },
 
-            getConditions: function(){
-              return $http.get('/api/conditions').then(function(success){
-                return success.data;
-              }, function(error){
-                return error;
-              });
+            getConditions: function (){
+                return $http.get('/api/conditions').then(function (success){
+                    return success.data;
+                }, function (error){
+                    return error;
+                });
+            },
+
+            getMoon: function (){
+                return $http.get('/api/astronomy').then(function (success){
+                    return success.data;
+                }, function (error){
+                    return error;
+                });
             }
         }
     }])
 
-    .factory('TestFactory', [function(){
+    .factory('socket', ['$rootScope', function ($rootScope){
+        var socket = io.connect();
         return {
-            testFunction: function(){
-                return "test string from factory";
+            on: function (eventName, callback){
+                socket.on(eventName, function (){
+                    var args = arguments;
+                    $rootScope.$apply(function (){
+                        callback.apply(socket, args);
+                    });
+                });
+            },
+            emit: function (eventName, data, callback){
+                socket.emit(eventName, data, function (){
+                    var args = arguments;
+                    $rootScope.$apply(function (){
+                        if(callback){
+                            callback.apply(socket, args);
+                        }
+                    });
+                });
             }
-        }
-    }])
-
-    .factory('socket', ['$rootScope', function($rootScope){
-      var socket = io.connect();
-      return {
-        on: function(eventName, callback){
-          socket.on(eventName, function(){
-            var args = arguments;
-            $rootScope.$apply(function(){
-              callback.apply(socket, args);
-            });
-          });
-        },
-        emit: function(eventName, data, callback){
-          socket.emit(eventName, data, function(){
-            var args = arguments;
-            $rootScope.$apply(function(){
-              if(callback){
-                callback.apply(socket, args);
-              }
-            });
-          });
-        }
-      };
+        };
     }]);

@@ -2,5 +2,4 @@
 node_modules
 app/bower_components
 *.log
-server/config.js
 config.js
