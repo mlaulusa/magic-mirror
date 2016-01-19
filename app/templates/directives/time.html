@@ -2,11 +2,14 @@
     {{time.time | date: 'MMMM d'}}
 </span>
 <span id="current-time">{{time.time | date:'shortTime'}}</span>
-<p>
-    <i class="wi wi-sunrise"></i>
-    {{time.astronomy.sunrise.hour}}:{{time.astronomy.sunrise.minute}} AM
-</p>
-<p>
-    <i class="wi wi-sunset"></i>
-    {{time.astronomy.sunset.hour}}:{{time.astronomy.sunset.minute}} PM
-</p>
+
+<div class="rise-set">
+    <p>
+        <i class="wi wi-sunrise"></i>
+        {{time.astronomy.sunrise.hour}}:{{time.astronomy.sunrise.minute}} AM
+    </p>
+    <p>
+        <i class="wi wi-sunset"></i>
+        {{time.astronomy.sunset.hour}}:{{time.astronomy.sunset.minute}} PM
+    </p>
+</div>

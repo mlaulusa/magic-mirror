@@ -36,7 +36,6 @@ angular.module('magicmirror.controllers', [])
                 }
             }, vm);
 
-        $log.info(vm.conditions.icon);
         });
 
         socket.on('update-forecast', function (data){
@@ -52,7 +51,7 @@ angular.module('magicmirror.controllers', [])
     .controller('TimeCtrl', ['$log', '$interval', 'socket', 'WeatherFactory', function ($log, $interval, socket, WeatherFactory){
         var vm = this;
 
-        WeatherFactory.getMoon().then(function(data){
+        WeatherFactory.getAstronomy().then(function(data){
             vm.astronomy = {};
 
             // TODO: Find a way to determine if it is an error and make sure not to set vm.moon if it is an error
@@ -63,7 +62,6 @@ angular.module('magicmirror.controllers', [])
                     this.astronomy = value;
                 }
             }, vm);
-            $log.info(vm.astronomy);
 
         });
 
@@ -81,7 +79,33 @@ angular.module('magicmirror.controllers', [])
 
       var vm = this;
 
-      vm.alerts = ['ALERT', 'ANOTHER ALERT', 'GIVE US ANOTHER ONE', 'WARNING!!'];
+        WeatherFactory.getAlerts().then(function(data){
+            vm.alerts = {};
+
+            angular.forEach(data, function (value){
+                if(!this.alerts.date_retreived){
+                    this.alerts = value;
+                } else if(value.date_retreived > this.alerts.date_retreived){
+                    this.alerts = value;
+                }
+                //if(value.reports.length > 0){
+                //    this.alerts = value;
+                //    $log.info(this.alerts.reports[0].message);
+                //}
+            }, vm);
+
+        });
+
+        vm.expired = function(){
+            var expired = true;
+
+            if(vm.alerts.reports[0].expires_epoch > new Date()){
+                expired = false;
+            }
+
+            return expired;
+
+        };
 
         socket.on('update-alerts', function (data){
             vm.alerts = data;

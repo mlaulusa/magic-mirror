@@ -1,4 +1,3 @@
-<ul class="slider">
-  <li ng-repeat="alert in alerts.alerts" class="slide">{{alert}}</li>
-</ul>
-<!-- onehungrymind.com/build-sweet-photo-slider-angularjs-animate/ -->
+<div class="auto-scroll">
+    <p ng-hide="alerts.expired()"><strong>{{alerts.alerts.reports[0].message}}</strong></p>
+</div>
